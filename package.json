@@ -1,14 +1,14 @@
 {
-  "name": "@iro/cox",
-  "version": "1.0.2",
-  "description": "Collision engine may evolve into physical engine.",
-  "main": "dist/cox.min.js",
-  "module": "dist/cox.es.js",
+  "name": "@iro/intersection",
+  "version": "1.0.0",
+  "description": "Perfect line intersection detection.",
+  "main": "dist/intersection.min.js",
+  "module": "dist/intersection.es.js",
   "types": "dist/type/index.d.ts",
   "scripts": {
     "build": "rm -fr dist & rollup -c",
     "test": "npm run build && mocha test/",
-    "declaration": "tsc --declaration --declarationDir dist/type ./src/index.ts --emitDeclarationOnly"
+    "declaration": "tsc -t es5 --declaration --declarationDir dist/type ./src/index.ts --emitDeclarationOnly"
   },
   "browserslist": [
     "android >= 5",
@@ -16,18 +16,18 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/JetLua/cox"
+    "url": "https://github.com/JetLua/intersection"
   },
   "author": "JetLu",
   "license": "MIT",
   "devDependencies": {
     "@rollup/plugin-typescript": "^8.0.0",
     "expect.js": "^0.3.1",
-    "mocha": "^8.0.1",
+    "mocha": "^9.0.3",
     "rollup": "^2.15.0",
     "rollup-plugin-terser": "^7.0.2",
     "tslib": "^2.0.0",
     "typescript": "^4.1.2"
   },
-  "dependencies": {}
+  "publishConfig": {"registry": "https://registry.npmjs.org", "access": "public"}
 }

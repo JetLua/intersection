@@ -15,13 +15,13 @@ export default {
     {
       format: 'es',
       sourcemap: true,
-      file: 'dist/cox.es.js'
+      file: 'dist/intersection.es.js'
     },
     {
       format: 'umd',
       sourcemap: true,
-      name: 'cox',
-      file: 'dist/cox.min.js'
+      name: 'intersection',
+      file: 'dist/intersection.min.js'
     }
   ]
 }
